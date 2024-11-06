@@ -121,7 +121,7 @@ export default {
             'icon-size': 0.5, // Adjust size to differentiate from clusters
             'icon-allow-overlap': true,
           },
-        });
+        }); 
 
         // Handle cluster click to zoom in
         this.map.on('click', 'clusters', (e) => {
