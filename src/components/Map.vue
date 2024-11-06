@@ -90,10 +90,10 @@ export default {
             this.map.addImage('cluster-icon', image);
           });
         }
-        if (!this.map.hasImage('cluster-icon-all')) {
-          this.map.loadImage('/images/m.png', (error, image) => {
+        if (!this.map.hasImage('cluster-icon')) {
+          this.map.loadImage('/images/m40.png', (error, image) => {
             if (error) throw error;
-            this.map.addImage('cluster-icon-all', image);
+            this.map.addImage('cluster-icon', image);
           });
         }
 
@@ -104,8 +104,8 @@ export default {
           source: 'items',
           filter: ['has', 'point_count'],
           layout: {
-            'icon-image': 'cluster-icon-all',
-            'icon-size': 0.6, // Adjust the size if needed
+            'icon-image': 'cluster-icon',
+            'icon-size': 1, // Adjust the size if needed
             'icon-allow-overlap': true,
           },
         });
