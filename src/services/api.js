@@ -11,6 +11,12 @@ const apiClient = axios.create({
 });
 
 export default {
+  getItems(search) {
+    return apiClient.get('/items', { params: { search } });
+  },
+  getItem(id) {
+    return apiClient.get(`/items/${id}`);
+  },
   getPerson(id) { // New method for fetching individual person details
     return apiClient.get(`/persons/${id}`);
   },
