@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000/api', // Ensure this matches your backend URL
+  baseURL: 'https://last-production-ebba.up.railway.app/', // Ensure this matches your backend URL
   withCredentials: false,
   headers: {
     Accept: 'application/json',
