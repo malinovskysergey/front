@@ -20,4 +20,5 @@ export default {
   getPerson(id) { // New method for fetching individual person details
     return apiClient.get(`/persons/${id}`);
   },
-};
+}; 
+//
