@@ -19,7 +19,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('https://last-production-ebba.up.railway.app/api'),
+  history: createWebHistory(),
   routes,
 });
 
